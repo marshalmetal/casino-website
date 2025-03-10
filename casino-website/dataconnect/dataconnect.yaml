@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "casino-website"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "casino-website-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
